@@ -122,4 +122,126 @@ section {
     padding: 10px;
     border: 1px solid #aaa;
   }
+
+/* Tipografía elegante */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #faf5f0;
+}
+
+/* Encabezados refinados */
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8b5e3c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Productos */
+.productos-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(100,80,60,0.1);
+  padding: 16px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(100,80,60,0.2);
+}
+
+.producto img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Botón agregar */
+.producto button {
+  background-color: #c78357;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+.producto button:hover {
+  background-color: #b36b47;
+}
+
+/* Carrito */
+#carrito-section {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(100,80,60,0.15);
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 5px rgba(100,80,60,0.1);
+}
+
+.item-carrito button {
+  background: transparent;
+  border: none;
+  color: #c78357;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.item-carrito button:hover {
+  color: #a05a39;
+}
+
+/* Botón vaciar carrito */
+#vaciar-carrito {
+  background-color: #8b5e3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+#vaciar-carrito:hover {
+  background-color: #70482f;
+}
+
+/* Total */
+#carrito-section p strong {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productos-container { flex-direction: column; align-items: center; }
+  .producto { width: 90%; }
+}
+
   
